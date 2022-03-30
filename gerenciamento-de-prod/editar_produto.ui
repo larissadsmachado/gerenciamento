@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>751</width>
+    <height>324</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(231, 234, 255)
+</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>350</x>
+      <y>0</y>
+      <width>221</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>15</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(47, 0, 118)</string>
+    </property>
+    <property name="text">
+     <string>Edite esse produto</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>70</y>
+      <width>41</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>ID</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>70</y>
+      <width>81</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>CODIGO</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>320</x>
+      <y>70</y>
+      <width>91</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>PRODUTO</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_6">
+    <property name="geometry">
+     <rect>
+      <x>600</x>
+      <y>70</y>
+      <width>91</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>CATEGORIA</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_ID">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>110</y>
+      <width>121</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(243, 239, 255)</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_Cod">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>110</y>
+      <width>121</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(243, 239, 255)</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_Prod">
+    <property name="geometry">
+     <rect>
+      <x>300</x>
+      <y>110</y>
+      <width>121</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(243, 239, 255)</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_Categ">
+    <property name="geometry">
+     <rect>
+      <x>580</x>
+      <y>110</y>
+      <width>121</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(243, 239, 255)</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_salvar">
+    <property name="geometry">
+     <rect>
+      <x>360</x>
+      <y>210</y>
+      <width>121</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>11</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+
+	background-color:rgb(190, 230, 255);
+	color: rgb(47, 0, 118);
+	border-radius:13px
+
+}
+
+QPushButton:hover{
+	background-color:rgb(47, 0, 118);
+	color: rgb(190, 230, 255);
+}
+</string>
+    </property>
+    <property name="text">
+     <string>Salvar</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_Quant">
+    <property name="geometry">
+     <rect>
+      <x>440</x>
+      <y>110</y>
+      <width>121</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(243, 239, 255)</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_7">
+    <property name="geometry">
+     <rect>
+      <x>450</x>
+      <y>70</y>
+      <width>111</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>QUANTIDADE</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>751</width>
+     <height>26</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
