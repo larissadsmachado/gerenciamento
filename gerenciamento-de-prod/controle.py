@@ -1,12 +1,8 @@
 from PyQt5 import uic,QtWidgets # ler o uic e torna visivel pelo qtwidgets 
 import mysql.connector 
-#import sqlite3
 from reportlab.pdfgen import canvas # gerar pdf
 
 numero_id = 0 #variavel criada para ser usada como global 
-
-#banco = sqlite3.connect 
-
 
 banco = mysql.connector.connect(
     host='localhost',
@@ -14,8 +10,6 @@ banco = mysql.connector.connect(
     password='',
     database='cadastro_produtos'
 ) 
-# O comando cursor vai ser muito usado para manipular o banco de dados
-
 
 
 
@@ -48,7 +42,7 @@ def funcao_principal():
     comando_SQL = 'INSERT INTO produtos (codigo,produto,quantidade,categoria) values (%s,%s,%s,%s)'
     dados = (str(linha1),str(linha2),str(linha3),categoria,) #aqui é o que vai ser ecrito inde tem a "%s"
     cursor.execute(comando_SQL,dados)
-    banco.commit()
+    banco.commit() #Edita o banco de dados
     formulario.lineCod.setText('') #Essa função é vazia para que apos o botao de enviar for selecionado o campo ficar limpo
     formulario.lineProd.setText('')
     formulario.lineQuant.setText('')
